@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Gambar</title>
+    <link rel="stylesheet" href="Buat_Game.css">
+</head>
+<body>
+    <h1 id="score">
+        0
+    </h1>
+    <div id="soal1">
+        <img src="assets/star.png" alt="">
+        <input type="text" name="" id="jawaban1">
+        <button onclick="check1()" >Submit</button>
+    </div>
+
+    <div id="soal2" style="display: none;">
+        <img src="assets/rawon.png" alt="">
+        <input type="text" name="" id="jawaban2">
+        <button onclick="check2()" >Submit</button>
+    </div>
+    
+    <div id="soal3" style="display: none;">
+        <img src="assets/baksomalang.png" alt="">
+        <input type="text" name="" id="jawaban3">
+        <button onclick="check3()" >Submit</button>
+    </div>
+    
+    <div id="soal4" style="display: none;">
+        <img src="assets/create.png" alt="">
+        <input type="text" name="" id="jawaban4">
+        <button onclick="check4()" >Submit</button>
+    </div>
+    
+    <div id="soal5" style="display: none;">
+        <img src="assets/cutlery.png" alt="">
+        <input type="text" name="" id="jawaban5">
+        <button onclick="check5()" >Submit</button>
+    </div>
+    
+    <div id="soal6" style="display: none;">
+        <img src="assets/fb.png" alt="">
+        <input type="text" name="" id="jawaban6">
+        <button onclick="check6()" >Submit</button>
+    </div>
+    
+    <div id="soal7" style="display: none;">
+        <img src="assets/twitter.png" alt="">
+        <input type="text" name="" id="jawaban7">
+        <button onclick="check7()" >Submit</button>
+    </div>
+    
+    <div id="soal8" style="display: none;">
+        <img src="assets/sotolamongan.png" alt="">
+        <input type="text" name="" id="jawaban8">
+        <button onclick="check8()" >Submit</button>
+    </div>
+    
+    <div id="soal9" style="display: none;">
+        <img src="assets/wedangjahe.png" alt="">
+        <input type="text" name="" id="jawaban9">
+        <button onclick="check9()" >Submit</button>
+    </div>
+    
+    <div id="soal10" style="display: none;">
+        <img src="assets/sekoteng.png" alt="">
+        <input type="text" name="" id="jawaban10">
+        <button onclick="check10()" >Submit</button>
+    </div>
+
+
+    
+
+</body>
+    <script>
+        var score = 0;
+        var scoretampil = document.getElementById("score");
+
+        function check1(){
+            var jawaban1 = document.getElementById("jawaban1").value
+            var jawabanBenar1 = "star"
+            if( jawaban1 == jawabanBenar1){
+                document.getElementById("soal1").style.display = "none"
+                document.getElementById("soal2").style.display = "block"
+                window.alert("jawaban anda benar")
+                score += 100
+                document.getElementById("score").innerHTML = score
+            }else{
+                window.alert("jawaban anda salah")
+                score -= 50
+                document.getElementById("score").innerHTML = score
+                document.getElementById("soal1").style.display = "none"
+                document.getElementById("soal2").style.display = "block"
+            }
+        }
+
+        function check2(){
+             var jawaban2 = document.getElementById("jawaban2").value
+            var jawabanBenar2 = "rawon"
+            if( jawaban2 == jawabanBenar2){
+                document.getElementById("soal2").style.display = "none"
+                document.getElementById("soal3").style.display = "block"
+                window.alert("jawaban anda benar")
+                score += 100
+                document.getElementById("score").innerHTML = score
+            }else{
+                window.alert("jawaban anda salah")
+                score -= 50
+                document.getElementById("score").innerHTML = score
+                document.getElementById("soal1").style.display = "none"
+                document.getElementById("soal3").style.display = "block"
+            }
+        }
+
+        function check3(){
+            var jawaban1 = document.getElementById("jawaban3").value
+            var jawabanBenar3 = "bakso"
+            if( jawaban3 == jawabanBenar3){
+                document.getElementById("soal3").style.display = "none"
+                document.getElementById("soal4").style.display = "block"
+                window.alert("jawaban anda benar")
+                score += 100
+                document.getElementById("score").innerHTML = score
+            }else{
+                window.alert("jawaban anda salah")
+                score -= 50
+                document.getElementById("score").innerHTML = score
+                document.getElementById("soal3").style.display = "none"
+                document.getElementById("soal4").style.display = "block"
+            }
+        }
+
+        function check4(){
+            var jawaban1 = document.getElementById("jawaban4").value
+            var jawabanBenar4 = "create"
+            if( jawaban4 == jawabanBenar4){
+                document.getElementById("soal4").style.display = "none"
+                document.getElementById("soal5").style.display = "block"
+                window.alert("jawaban anda benar")
+                score += 100
+                document.getElementById("score").innerHTML = score
+            }else{
+                window.alert("jawaban anda salah")
+                score -= 50
+                document.getElementById("score").innerHTML = score
+                document.getElementById("soal4").style.display = "none"
+                document.getElementById("soal5").style.display = "block"
+            }
+        }
+
+        function check5(){
+            var jawaban5 = document.getElementById("jawaban5").value
+            var jawabanBenar5 = "cutlery"
+            if( jawaban5 == jawabanBenar5){
+                document.getElementById("soal5").style.display = "none"
+                document.getElementById("soal6").style.display = "block"
+                window.alert("jawaban anda benar")
+                score += 100
+                document.getElementById("score").innerHTML = score
+            }else{
+                window.alert("jawaban anda salah")
+                score -= 50
+                document.getElementById("score").innerHTML = score
+                document.getElementById("soal5").style.display = "none"
+                document.getElementById("soal6").style.display = "block"
+            }
+        }
+
+        function check6(){
+            var jawaban6 = document.getElementById("jawaban6").value
+            var jawabanBenar6 = "fb"
+            if( jawaban6 == jawabanBenar6){
+                document.getElementById("soal6").style.display = "none"
+                document.getElementById("soal7").style.display = "block"
+                window.alert("jawaban anda benar")
+                score += 100
+                document.getElementById("score").innerHTML = score
+            }else{
+                window.alert("jawaban anda salah")
+                score -= 50
+                document.getElementById("score").innerHTML = score
+                document.getElementById("soal6").style.display = "none"
+                document.getElementById("soal7").style.display = "block"
+            }
+        }
+
+        function check7(){
+            var jawaban7 = document.getElementById("jawaban7").value
+            var jawabanBenar7 = "twitter"
+            if( jawaban7 == jawabanBenar7){
+                document.getElementById("soal7").style.display = "none"
+                document.getElementById("soal8").style.display = "block"
+                window.alert("jawaban anda benar")
+                score += 100
+                document.getElementById("score").innerHTML = score
+            }else{
+                window.alert("jawaban anda salah")
+                score -= 50
+                document.getElementById("score").innerHTML = score
+                document.getElementById("soal7").style.display = "none"
+                document.getElementById("soal8").style.display = "block"
+            }
+        }
+
+        function check8(){
+            var jawaban8 = document.getElementById("jawaban8").value
+            var jawabanBenar8 = "sotolamongan"
+            if( jawaban8 == jawabanBenar8){
+                document.getElementById("soal8").style.display = "none"
+                document.getElementById("soal9").style.display = "block"
+                window.alert("jawaban anda benar")
+                score += 100
+                document.getElementById("score").innerHTML = score
+            }else{
+                window.alert("jawaban anda salah")
+                score -= 50
+                document.getElementById("score").innerHTML = score
+                document.getElementById("soal8").style.display = "none"
+                document.getElementById("soal9").style.display = "block"
+            }
+        }
+
+        function check9(){
+            var jawaban9 = document.getElementById("jawaban9").value
+            var jawabanBenar9 = "wedangjahe"
+            if( jawaban9 == jawabanBenar9){
+                document.getElementById("soal9").style.display = "none"
+                document.getElementById("soal10").style.display = "block"
+                window.alert("jawaban anda benar")
+                score += 100
+                document.getElementById("score").innerHTML = score
+            }else{
+                window.alert("jawaban anda salah")
+                score -= 50
+                document.getElementById("score").innerHTML = score
+                document.getElementById("soal9").style.display = "none"
+                document.getElementById("soal10").style.display = "block"
+            }
+        }
+
+        function check10(){
+            var jawaban10 = document.getElementById("jawaban10").value
+            var jawabanBenar10 = "sekoteng"
+            if( jawaban10 == jawabanBenar10){
+                document.getElementById("soal10").style.display = "none"
+                
+                window.alert("jawaban anda benar")
+                score += 100
+                document.getElementById("score").innerHTML = score
+            }else{
+                window.alert("jawaban anda salah")
+                score -= 50
+                document.getElementById("score").innerHTML = score
+                document.getElementById("soal10").style.display = "none"
+                
+            }
+        }
+    </script>
+</html>
